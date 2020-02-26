@@ -20,9 +20,23 @@ def long_planeteer_calls (array)
   end
 end
 
+# def find_the_cheese(a)
+#   i = 0 
+#   while i < a.length
+#     if a.include?("cheddar") 
+#       return "cheddar"
+#     else if a.include?("gouda") 
+#       return "gouda"
+#     else if a.include?("camembert") 
+#       return "camembert"
+#     end end end 
+#     i+=1
+#   end
+#   nil
+# end 
+
 def find_the_cheese(a)
-  i = 0 
-  while i < a.length
+  a.map do |cheese| 
     if a.include?("cheddar") 
       return "cheddar"
     else if a.include?("gouda") 
@@ -30,10 +44,9 @@ def find_the_cheese(a)
     else if a.include?("camembert") 
       return "camembert"
     end end end 
-    i+=1
   end
-  nil
-end 
+nil
+end
 
 # cheese_types = ["cheddar", "gouda", "camembert"]
 # banana
